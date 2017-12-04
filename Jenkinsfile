@@ -33,9 +33,10 @@ pipeline {
       }
     }
 
-    stage ('Running Integration tests'){
+    stage ('Running Integration tests and storing the results in Jenkins'){
       steps {
         sh 'mvn verify'
+        junit allowEmptyResults: true, healthScaleFactor: 0.1, testResults: 'target/failsafe-reports/*.xml'
       }
     }
 

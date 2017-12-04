@@ -32,5 +32,12 @@ pipeline {
         }
       }
     }
+
+    stage ('Running Integration tests'){
+      steps {
+        sh 'mvn verify'
+      }
+    }
+
   }
 }

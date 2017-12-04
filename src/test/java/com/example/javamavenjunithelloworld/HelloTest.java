@@ -16,16 +16,16 @@ import static org.junit.Assert.*;
  */
 public class HelloTest {
 
-    @Test
-    public void testSayHello() {
-        OutputStream os = new ByteArrayOutputStream();
-        PrintStream stream = new PrintStream(os, true);
-
-        Hello hi = new Hello();
-        hi.sayHello(stream);
-
-        assertThat(os.toString(), is(equalTo(Hello.HELLO + "\n")));
-    }
+    // @Test
+    // public void testSayHello() {
+    //     OutputStream os = new ByteArrayOutputStream();
+    //     PrintStream stream = new PrintStream(os, true);
+    //
+    //     Hello hi = new Hello();
+    //     hi.sayHello(stream);
+    //
+    //     assertThat(os.toString(), is(equalTo(Hello.HELLO + "\n")));
+    // }
 
     @Test
     public void testSayHelloAFewTimes() {

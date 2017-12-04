@@ -17,7 +17,7 @@ pipeline {
     stage ('Running Unit tests and storing them in Jenkins') {
       steps {
         sh 'mvn test'
-        junit 'target/surefire-reports/*.xml'
+        junit allowEmptyResults: true, healthScaleFactor: 0.1, testResults: 'target/surefire-reports/*.xml'
       }
     }
 

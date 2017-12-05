@@ -64,12 +64,12 @@ public class HelloAppTest {
         HelloApp.main(args);
     }
 
-    // @Test
-    // public void classInstanceForCodeCoverageTest() {
-    //     // Strictly speaking this test doesn't achieve anything, because HelloApp contains only a single static
-    //     // method, but for purposes of full code coverage it is included. In general,
-    //     // it is easier to aim for full code coverage and be done with it, than to remember why class X is stuck at
-    //     // 95% code coverage.
-    //     new HelloApp();
-    // }
+    @Test
+    public void classInstanceForCodeCoverageTest() {
+        // Strictly speaking this test doesn't achieve anything, because HelloApp contains only a single static
+        // method, but for purposes of full code coverage it is included. In general,
+        // it is easier to aim for full code coverage and be done with it, than to remember why class X is stuck at
+        // 95% code coverage.
+        new HelloApp();
+    }
 }

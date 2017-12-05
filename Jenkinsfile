@@ -37,7 +37,7 @@ pipeline {
         archiveArtifacts artifacts: 'target/java-maven-junit-helloworld-*.jar', fingerprint: true, onlyIfSuccessful: true
         sh "echo 'Artifact succesfully Archived!'"
         sh "echo 'Publishing Coverage Report!'"
-        cobertura autoUpdateStability: false, coberturaReportFile: 'target/site/cobertura/*.xml', conditionalCoverageTargets: '70, 60, 60', failNoReports: false, lineCoverageTargets: '80, 70, 70', maxNumberOfBuilds: 10, methodCoverageTargets: '90, 85, 85', sourceEncoding: 'ASCII', zoomCoverageChart: false
+        cobertura autoUpdateHealth: true, autoUpdateStability: true, coberturaReportFile: 'target/site/cobertura/*.xml', failUnhealthy: true, failUnstable: true, conditionalCoverageTargets: '70, 60, 60', failNoReports: false, lineCoverageTargets: '80, 70, 70', maxNumberOfBuilds: 10, methodCoverageTargets: '90, 85, 85', sourceEncoding: 'ASCII', zoomCoverageChart: false
         }
       }
     }

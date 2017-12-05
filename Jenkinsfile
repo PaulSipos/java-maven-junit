@@ -38,6 +38,7 @@ pipeline {
         sh "echo 'Artifact succesfully Archived!'"
         sh "echo 'Publishing Coverage Report!'"
         cobertura coberturaReportFile: 'target/cobertura/coverage.xml', conditionalCoverageTargets: '70, 60, 60', failNoReports: false, failUnhealthy: false, failUnstable: false, lineCoverageTargets: '80, 70, 70', maxNumberOfBuilds: 10, methodCoverageTargets: '90, 85, 85', onlyStable: false, sourceEncoding: 'ASCII'
+        }
       }
     }
 

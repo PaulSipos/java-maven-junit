@@ -28,6 +28,11 @@ pipeline {
       }
     }
 
+    stage ('Code quality test with SonarQube') {
+      withSonarQubeEnv('Sonar.Local') {
+        sh 'mvn sonar:sonar'
+      }
+    }
     stage ('Building the package and archiving it in Jenkins') {
       steps {
         sh 'mvn clean package'

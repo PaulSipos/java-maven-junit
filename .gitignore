@@ -19,3 +19,5 @@ Thumbs.db
 
 # Various text editor swap files, etc.
 .*.swp
+#gradle files
+.gradle/*

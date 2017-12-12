@@ -38,7 +38,7 @@ pipeline {
     }
     stage ('Building the package and archiving it in Jenkins') {
       steps {
-        sh 'mvn package'
+        sh 'mvn deploy'
       }
       post {
         success {

@@ -154,8 +154,8 @@
 
     <distributionManagement>
     <snapshotRepository>
-    <id>nexus-snapshots</id>
-    <url>http://nexus.local:81/nexus/repository/snapshots</url>
+    <id>nexus</id>
+    <url>http://nexus.local:81/nexus/repository/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 

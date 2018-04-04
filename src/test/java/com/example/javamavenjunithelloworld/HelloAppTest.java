@@ -71,5 +71,6 @@ public class HelloAppTest {
         // it is easier to aim for full code coverage and be done with it, than to remember why class X is stuck at
         // 95% code coverage.
         new HelloApp();
+        
     }
 }

@@ -70,6 +70,6 @@ public class HelloAppTest {
         // method, but for purposes of full code coverage it is included. In general,
         // it is easier to aim for full code coverage and be done with it, than to remember why class X is stuck at
         // 95% code coverage.
-      //  new HelloApp();
+        new HelloApp();
     }
 }
